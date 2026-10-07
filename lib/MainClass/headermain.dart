@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class HeaderMain extends StatelessWidget {
+class HeaderMain extends StatelessWidget implements PreferredSizeWidget {
   const HeaderMain({super.key});
 
   @override
@@ -20,4 +20,8 @@ class HeaderMain extends StatelessWidget {
       backgroundColor: const Color.fromARGB(255, 186, 192, 206),
     );
   }
+
+  @override
+  // TODO: implement preferredSize
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }

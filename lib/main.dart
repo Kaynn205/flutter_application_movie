@@ -9,7 +9,7 @@ void main() {
   List<Film> listFamousMovies = Film.nouveautes();
 
   runApp(const MainApp());
-}
+} 
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
@@ -22,7 +22,7 @@ class MainApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color.fromARGB(255, 184, 216, 231),
       ),
       home: Scaffold(
-        //appBar: HeaderMain(),
+        appBar: const HeaderMain(),
         body: null,
         bottomNavigationBar: const FooterMain(),
       ),
